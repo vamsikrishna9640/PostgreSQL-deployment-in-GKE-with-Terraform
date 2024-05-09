@@ -88,6 +88,7 @@ resource "google_container_cluster" "primary" {
   initial_node_count       = 1
   network                  = google_compute_network.main.self_link
   subnetwork               = google_compute_subnetwork.private.self_link
+  deletion_protection = false
 
 
   ip_allocation_policy {

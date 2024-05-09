@@ -1,4 +1,4 @@
-project_id = "platform-services-sandbox"
+project_id = "  "
 region = "europe-west1"
 ip_cidr_range = "10.0.0.0/18"
 machine_type = "e2-medium"

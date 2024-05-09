@@ -9,17 +9,19 @@ variable "region" {
 }
 
 variable "ip_cidr_range" {
-    description = "cidr-range"
+    description = "ip-cide-range of subnet"
   
 }
 
+variable "location" {
+    description = "location for gke"
+  
+}
 variable "machine_type" {
-    description = "type of the machine"
+    description = "machine type for nodes"
   
 }
 
 variable "node_count" {
     description = "no.of nodes"
-  
 }
-

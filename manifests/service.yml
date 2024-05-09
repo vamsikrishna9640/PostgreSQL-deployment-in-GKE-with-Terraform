@@ -3,8 +3,11 @@ kind: Service
 metadata:
   name: postgres
   namespace: postgres-ns
-spec:
-  selector:
+  labels:
     app: postgresql
+spec:
+  type: NodePort
   ports:
     - port: 5432
+  selector:
+    app: postgresql
